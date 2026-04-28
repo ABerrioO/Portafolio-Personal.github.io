@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Alejandro Berrio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS (Local) -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS (Personalizado) -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+
+<body tabindex="0">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-accent fs-3" href="#hero">ABO<span class="text-white">.CV</span></a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list fs-1 text-accent"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#estudios">Estudios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
+                        <!-- Enlace destacado para CV -->
+                        <a href="/multimedia/Hoja de Vida - Alejandro Berrio Ospina.pdf" target="_blank"
+                            class="btn btn-accent rounded-pill px-4 py-2 fw-semibold shadow-sm w-100">
+                            <i class="bi bi-file-earmark-person me-2"></i>Descargar CV
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section d-flex align-items-center min-vh-100">
+        <div class="container">
+            <div class="row align-items-center flex-column-reverse flex-lg-row mt-5 mt-lg-0">
+                <div class="col-lg-6 text-center text-lg-start animate-on-scroll">
+                    <div
+                        class="d-inline-flex align-items-center px-3 py-1 rounded-pill bg-accent-subtle text-accent mb-4 fw-medium border border-accent border-opacity-25">
+                        <span class="pulse-dot bg-accent rounded-circle me-2"></span> Disponible para nuevos proyectos
+                    </div>
+                    <p class="text-white fs-4 mb-2">¡Hola, mucho gusto! Soy</p>
+                    <h1 class="display-2 fw-bold text-white mb-3 tracking-tight">Alejandro Berrio</h1>
+                    <h2 class="h3 text-accent mb-4 fw-light"><b>Estudiante de Ingeniería Informática / Desarrollador de
+                            Software</b></h2>
+                    <p class="lead text-gray mb-5 pe-lg-5 lh-base">
+                        Apasionado por crear soluciones tecnológicas eficientes. Actualmente curso 7° semestre y tengo
+                        experiencia en desarrollo de software, bases de datos y proyectos de investigación.
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start align-items-center">
+                        <a href="#proyectos" class="btn btn-outline-light btn-lg rounded-pill px-4">Ver
+                            Proyectos</a>
+                        <a href="#contacto" class="btn btn-outline-light btn-lg rounded-pill px-4">Contáctame</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5 mb-lg-0 text-center animate-on-scroll">
+                    <div class="hero-img-container mx-auto" id="particle-container">
+                        <!-- Las partículas se generan dinámicamente mediante JS -->
+                        <div class="rounded-circle overflow-hidden w-100 h-100 shadow-lg"
+                            style="border: 6px solid var(--bg-dark);">
+                            <img src="./multimedia/Foto de perfil.jpeg" alt="Alejandro Berrio"
+                                class="img-fluid hero-img"
+                                onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative Scroll Indicator -->
+        <a href="#habilidades"
+            class="scroll-down-indicator text-accent text-center position-absolute bottom-0 start-50 translate-middle-x mb-5 d-none d-lg-block">
+            <span class="d-block mb-3 text-uppercase text-xs fw-bold tracking-widest text-gray">Desliza para ver
+                más</span>
+            <div class="d-flex flex-column align-items-center">
+                <i class="bi bi-chevron-down fs-1 scroll-arrow"></i>
+                <i class="bi bi-chevron-down fs-1 scroll-arrow"></i>
+                <i class="bi bi-chevron-down fs-1 scroll-arrow"></i>
+            </div>
+        </a>
+    </section>
+
+    <!-- Habilidades Section -->
+    <section id="habilidades" class="py-6 bg-darker">
+        <div class="container py-5">
+            <div class="text-center mb-5 animate-on-scroll">
+                <h6 class="text-accent text-uppercase fw-bold tracking-widest mb-2">● Conocimientos ●</h6>
+                <h2 class="display-5 fw-bold text-white">Mis <span class="text-gradient">Habilidades</span></h2>
+                <div class="section-divider mx-auto my-4"></div>
+                <p class="text-gray mx-auto" style="max-width: 600px;">Herramientas y tecnologías con las que construyo
+                    soluciones eficientes y escalables.</p>
+                <!-- Lenguajes de programación -->
+                <div class="mb-5 mt-5 text-center">
+                    <h4 class="text-white mb-4 animate-on-scroll fs-3 fw-bold"><i
+                            class="bi bi-code-square me-2 text-accent"></i>Lenguajes de programación</h4>
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-6 col-md-4 col-lg-2 animate-on-scroll">
+                            <div class="skill-card text-center p-4 rounded-4 h-100">
+                                <div class="icon-wrapper mx-auto">
+                                    <img src="./multimedia/Logo_python.png" alt="Python" class="img-fluid"
+                                        style="width: 55px; height: 55px; object-fit: contain;">
+                                </div>
+                                <h5 class="text-white mb-0 fw-semibold">Python</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 animate-on-scroll" style="transition-delay: 0.1s">
+                            <div class="skill-card text-center p-4 rounded-4 h-100">
+                                <div class="icon-wrapper mx-auto">
+                                    <img id="csharp" src="./multimedia/Logo_c.png" alt="C#" class="img-fluid"
+                                        style="width: 55px; height: 55px; object-fit: contain;">
+                                </div>
+                                <h5 class="text-white mb-0 fw-semibold">C#</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 animate-on-scroll" style="transition-delay: 0.2s">
+                            <div class="skill-card text-center p-4 rounded-4 h-100">
+                                <div class="icon-wrapper mx-auto">
+                                    <img id="html" src="./multimedia/Logo_html.png" alt="HTML5" class="img-fluid"
+                                        style="width: 55px; height: 55px; object-fit: contain;">
+                                </div>
+                                <h5 class="text-white mb-0 fw-semibold">HTML</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 animate-on-scroll" style="transition-delay: 0.3s">
+                            <div class="skill-card text-center p-4 rounded-4 h-100">
+                                <div class="icon-wrapper mx-auto">
+                                    <img id="css" src="./multimedia/Logo_css.png" alt="CSS3" class="img-fluid"
+                                        style="width: 55px; height: 55px; object-fit: contain;">
+                                </div>
+                                <h5 class="text-white mb-0 fw-semibold">CSS</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 animate-on-scroll" style="transition-delay: 0.4s">
+                            <div class="skill-card text-center p-4 rounded-4 h-100">
+                                <div class="icon-wrapper mx-auto">
+                                    <img src="./multimedia/Logo_javascript.png" alt="JavaScript" class="img-fluid"
+                                        style="width: 55px; height: 55px; object-fit: contain;">
+                                </div>
+                                <h5 class="text-white mb-0 fw-semibold">JavaScript</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="mb-5 text-center">
+                    <h4 class="text-white mb-4 animate-on-scroll fs-3 fw-bold"><i
+                            class="bi bi-box me-2 text-accent"></i>Frameworks</h4>
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-6 col-md-4 col-lg-2 animate-on-scroll">
+                            <div class="skill-card text-center p-4 rounded-4 h-100">
+                                <div class="icon-wrapper mx-auto">
+                                    <img src="./multimedia/Logo_nodejs.webp" alt="Node.JS" class="img-fluid"
+                                        style="width: 55px; height: 55px; object-fit: contain;">
+                                </div>
+                                <h5 class="text-white mb-0 fw-semibold">Node.JS</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 animate-on-scroll" style="transition-delay: 0.1s">
+                            <div class="skill-card text-center p-4 rounded-4 h-100">
+                                <div class="icon-wrapper mx-auto">
+                                    <img src="./multimedia/Logo_bootstrap.png" alt="Bootstrap" class="img-fluid"
+                                        style="width: 55px; height: 55px; object-fit: contain;">
+                                </div>
+                                <h5 class="text-white mb-0 fw-semibold">Bootstrap</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bases de datos -->
+                <div class="mb-4 text-center">
+                    <h4 class="text-white mb-4 animate-on-scroll fs-3 fw-bold"><i
+                            class="bi bi-database me-2 text-accent"></i>Bases de datos</h4>
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-6 col-md-4 col-lg-2 animate-on-scroll">
+                            <div class="skill-card text-center p-4 rounded-4 h-100">
+                                <div class="icon-wrapper mx-auto">
+                                    <img src="./multimedia/Logo_sql.png" alt="SQL" class="img-fluid"
+                                        style="width: 55px; height: 55px; object-fit: contain;">
+                                </div>
+                                <h5 class="text-white mb-0 fw-semibold">SQL</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 animate-on-scroll" style="transition-delay: 0.1s">
+                            <div class="skill-card text-center p-4 rounded-4 h-100">
+                                <div class="icon-wrapper mx-auto">
+                                    <img src="./multimedia/Logo_mongodb.png" alt="MongoDB" class="img-fluid"
+                                        style="width: 55px; height: 55px; object-fit: contain;">
+                                </div>
+                                <h5 class="text-white mb-0 fw-semibold">MongoDB</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Proyectos Section -->
+    <section id="proyectos" class="py-6">
+        <div class="container py-5">
+            <div class="text-center mb-5 animate-on-scroll">
+                <h6 class="text-accent text-uppercase fw-bold tracking-widest mb-2">● Portafolio ●</h6>
+                <h2 class="display-5 fw-bold text-white">Proyectos <span class="text-gradient">Destacados</span></h2>
+                <div class="section-divider mx-auto my-4"></div>
+                <p class="text-gray mx-auto" style="max-width: 600px;">Una selección de mis trabajos más recientes y
+                    desarrollos independientes.</p>
+            </div>
+
+            <div class="row g-4 mt-2 justify-content-center">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="card project-card h-100 bg-dark-card border-0 rounded-4 overflow-hidden shadow-sm">
+                        <div class="img-overlay-container">
+                            <!-- Nota: Placeholder de Unsplash asegurando que el diseño no se rompa -->
+                            <img src="multimedia/proyecto1.png" class="card-img-top project-img"
+                                alt="Sistema de Gestión de Lavaderos de Autos">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span
+                                    class="badge bg-accent-subtle text-accent rounded-pill px-3 py-2 fw-medium border border-accent border-opacity-10">HTML</span>
+                                <span
+                                    class="badge bg-accent-subtle text-accent rounded-pill px-3 py-2 fw-medium border border-accent border-opacity-10">CSS</span>
+                                <span
+                                    class="badge bg-accent-subtle text-accent rounded-pill px-3 py-2 fw-medium border border-accent border-opacity-10">JavaScript</span>
+                                <span
+                                    class="badge bg-accent-subtle text-accent rounded-pill px-3 py-2 fw-medium border border-accent border-opacity-10">Bootstrap</span>
+                            </div>
+                            <h4 class="card-title text-white fw-bold mb-3">Portafolio Web</h4>
+                            <p class="card-text text-gray mb-4 flex-grow-1 text-sm">Página web tipo currículum, con
+                                información personal,
+                                académica y profesional de mi persona</p>
+                            <div class="d-flex mt-auto">
+                                <a href="#" class="btn btn-accent w-100 rounded-pill"><i
+                                        class="bi bi-github me-2"></i>Ver Código</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experiencia Laboral Subsection -->
+                <div class="mt-5 pt-5">
+                    <div class="text-center mb-5 animate-on-scroll">
+                        <h2 class="display-5 fw-bold text-white">Experiencia <span class="text-gradient">Laboral</span>
+                        </h2>
+                        <div class="section-divider mx-auto my-4"></div>
+                        <p class="text-gray mx-auto" style="max-width: 600px;">Mi recorrido en el mundo laboral y
+                            contribuciones en entornos corporativos.</p>
+                    </div>
+
+                    <div class="row g-4 justify-content-center">
+                        <!-- Experiencia 1 -->
+                        <div class="col-lg-8 animate-on-scroll">
+                            <div
+                                class="bg-dark-card p-3 p-md-4 rounded-4 shadow-lg border border-light border-opacity-5 h-100 transition-all hover-translate-y">
+                                <div class="row align-items-center">
+                                    <div class="col-md-auto mb-3 mb-md-0">
+                                        <div class="icon-wrapper bg-dark rounded-circle d-flex align-items-center justify-content-center shadow-inner mx-auto mx-md-0"
+                                            style="width: 55px; height: 55px;">
+                                            <i class="bi bi-shop fs-2 text-accent"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md ps-md-4 text-center text-md-start">
+                                        <div
+                                            class="d-flex flex-column flex-md-row justify-content-between align-items-center align-items-md-start mb-2">
+                                            <div>
+                                                <h4 class="text-white fw-bold mb-1 fs-4">Asesor comercial de temporada
+                                                </h4>
+                                                <h6 class="text-accent fw-semibold mb-0">tennis
+                                                </h6>
+                                            </div>
+                                            <span
+                                                class="badge bg-accent-subtle text-accent rounded-pill px-3 py-2 mt-3 mt-md-0 text-uppercase tracking-widest border border-accent border-opacity-25"
+                                                style="font-size: 0.8rem;">diciembre
+                                                2025
+                                            </span>
+                                        </div>
+                                        <p class="text-gray-light mb-0 small">Descripción</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Estudios / Hitos Académicos Section -->
+    <section id="estudios" class="py-6 bg-darker">
+        <div class="container py-5">
+            <div class="text-center mb-5 animate-on-scroll">
+                <h6 class="text-accent text-uppercase fw-bold tracking-widest mb-2">● Trayectoria ●</h6>
+                <h2 class="display-5 fw-bold text-white">Estudios <span class="text-gradient">realizados</span></h2>
+                <div class="section-divider mx-auto my-4"></div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Hito 1 -->
+                <div class="col-lg-8 animate-on-scroll">
+                    <div
+                        class="bg-dark-card px-4 py-3 px-md-5 py-md-4 rounded-4 shadow-lg border border-light border-opacity-5 h-100 transition-all hover-translate-y">
+                        <div class="row align-items-center">
+                            <div class="col-md-auto mb-2 mb-md-0">
+                                <div class="icon-wrapper bg-dark rounded-circle d-flex align-items-center justify-content-center shadow-inner mx-auto mx-md-0"
+                                    style="width: 70px; height: 70px;">
+                                    <i class="bi bi-mortarboard-fill fs-1 text-accent"></i>
+                                </div>
+                            </div>
+                            <div class="col-md ps-md-4 text-center text-md-start">
+                                <div
+                                    class="d-flex flex-column flex-md-row justify-content-between align-items-center align-items-md-start mb-2">
+                                    <div>
+                                        <h4 class="text-white fw-bold mb-1 fs-3">Estudios escolares</h4>
+                                        <h6 class="text-accent fw-semibold mb-0">Colegio La Salle Envigado</h6>
+                                    </div>
+                                    <span
+                                        class="badge bg-accent-subtle text-accent rounded-pill px-4 py-2 mt-3 mt-md-0 text-uppercase tracking-widest text-sm border border-accent border-opacity-25">2010
+                                        - 2022</span>
+                                </div>
+                                <p class="text-gray-light mb-0 lead-sm">Educación primaria y secundaria</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hito 2 -->
+                <div class="col-lg-8 animate-on-scroll" style="transition-delay: 0.1s">
+                    <div
+                        class="bg-dark-card px-4 py-3 px-md-5 py-md-4 rounded-4 shadow-lg border border-light border-opacity-5 h-100 transition-all hover-translate-y">
+                        <div class="row align-items-center">
+                            <div class="col-md-auto mb-2 mb-md-0">
+                                <div class="icon-wrapper bg-dark rounded-circle d-flex align-items-center justify-content-center shadow-inner mx-auto mx-md-0"
+                                    style="width: 70px; height: 70px;">
+                                    <i class="bi bi-code-slash fs-1 text-accent"></i>
+                                </div>
+                            </div>
+                            <div class="col-md ps-md-4 text-center text-md-start">
+                                <div
+                                    class="d-flex flex-column flex-md-row justify-content-between align-items-center align-items-md-start mb-2">
+                                    <div>
+                                        <h4 class="text-white fw-bold mb-1 fs-3">Programación en Python</h4>
+                                        <h6 class="text-accent fw-semibold mb-0">SoftServe Academy</h6>
+                                    </div>
+                                    <span
+                                        class="badge bg-accent-subtle text-accent rounded-pill px-4 py-2 mt-3 mt-md-0 text-uppercase tracking-widest text-sm border border-accent border-opacity-25">2023</span>
+                                </div>
+                                <p class="text-gray-light mb-0 lead-sm">Curso intensivo centrado en el dominio de
+                                    Python, estructuras de datos, algoritmos y sus aplicaciones prácticas en el
+                                    desarrollo de software.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hito 3 -->
+                <div class="col-lg-8 animate-on-scroll" style="transition-delay: 0.2s">
+                    <div
+                        class="bg-dark-card px-4 py-3 px-md-5 py-md-4 rounded-4 shadow-lg border border-light border-opacity-5 h-100 transition-all hover-translate-y">
+                        <div class="row align-items-center">
+                            <div class="col-md-auto mb-2 mb-md-0">
+                                <div class="icon-wrapper bg-dark rounded-circle d-flex align-items-center justify-content-center shadow-inner mx-auto mx-md-0"
+                                    style="width: 70px; height: 70px;">
+                                    <i class="bi bi-stars fs-1 text-accent"></i>
+                                </div>
+                            </div>
+                            <div class="col-md ps-md-4 text-center text-md-start">
+                                <div
+                                    class="d-flex flex-column flex-md-row justify-content-between align-items-center align-items-md-start mb-2">
+                                    <div>
+                                        <h4 class="text-white fw-bold mb-1 fs-3">Estrategias pastoral</h4>
+                                        <h6 class="text-accent fw-semibold mb-0">Corporación Universitaria Unilasallista
+                                        </h6>
+                                    </div>
+                                    <span
+                                        class="badge bg-accent-subtle text-accent rounded-pill px-4 py-2 mt-3 mt-md-0 text-uppercase tracking-widest text-sm border border-accent border-opacity-25">2024</span>
+                                </div>
+                                <p class="text-gray-light mb-0 lead-sm">Diplomado enfocado en el planteamiento y
+                                    aplicación de estrategias de proceso pastoral en diferentes áreas y proyectos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hito 4 -->
+                <div class="col-lg-8 animate-on-scroll" style="transition-delay: 0.2s">
+                    <div
+                        class="bg-dark-card px-4 py-3 px-md-5 py-md-4 rounded-4 shadow-lg border border-light border-opacity-5 h-100 transition-all hover-translate-y">
+                        <div class="row align-items-center">
+                            <div class="col-md-auto mb-2 mb-md-0">
+                                <div class="icon-wrapper bg-dark rounded-circle d-flex align-items-center justify-content-center shadow-inner mx-auto mx-md-0"
+                                    style="width: 70px; height: 70px;">
+                                    <i class="bi bi-laptop fs-1 text-accent"></i>
+                                </div>
+                            </div>
+                            <div class="col-md ps-md-4 text-center text-md-start">
+                                <div
+                                    class="d-flex flex-column flex-md-row justify-content-between align-items-center align-items-md-start mb-2">
+                                    <div>
+                                        <h4 class="text-white fw-bold mb-1 fs-3">Ingeniería informática</h4>
+                                        <h6 class="text-accent fw-semibold mb-0">Corporación Universitaria Unilasallista
+                                        </h6>
+                                    </div>
+                                    <span class="badge bg-accent-subtle text-accent rounded-pill px-4 py-2 mt-3 mt-md-0 text-uppercase 
+                                        tracking-widest text-sm border border-accent border-opacity-25">2023 -
+                                        Actualidad</span>
+                                </div>
+                                <p class="text-gray-light mb-0 lead-sm">Educación universitaria. Pregrado en Ingeniería
+                                    informática</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Áreas de Interés Profesional -->
+            <div class="mt-5 pt-5">
+                <div class="text-center mb-5 animate-on-scroll">
+                    <h4 class="text-white fs-3 fw-bold"><i class="bi bi-star me-2 text-accent"></i>Áreas de Interés
+                        Profesional</h4>
+                    <div class="section-divider mx-auto mt-3"></div>
+                </div>
+
+                <div class="row g-3 justify-content-center">
+                    <!-- Area 1 -->
+                    <div class="col-auto animate-on-scroll">
+                        <div
+                            class="interest-card bg-dark-card border border-light border-opacity-10 px-4 py-3 rounded-4 d-flex align-items-center transition-all hover-translate-y">
+                            <i class="bi bi-code-square fs-4 text-accent me-3"></i>
+                            <span class="text-white fw-medium">Desarrollo de Software</span>
+                        </div>
+                    </div>
+                    <!-- Area 2 -->
+                    <div class="col-auto animate-on-scroll" style="transition-delay: 0.1s">
+                        <div
+                            class="interest-card bg-dark-card border border-light border-opacity-10 px-4 py-3 rounded-4 d-flex align-items-center transition-all hover-translate-y">
+                            <i class="bi bi-layers-half fs-4 text-accent me-3"></i>
+                            <span class="text-white fw-medium">Desarrollo Full-stack</span>
+                        </div>
+                    </div>
+                    <!-- Area 3 -->
+                    <div class="col-auto animate-on-scroll" style="transition-delay: 0.2s">
+                        <div
+                            class="interest-card bg-dark-card border border-light border-opacity-10 px-4 py-3 rounded-4 d-flex align-items-center transition-all hover-translate-y">
+                            <i class="bi bi-diagram-3 fs-4 text-accent me-3"></i>
+                            <span class="text-white fw-medium">Arquitectura de Software</span>
+                        </div>
+                    </div>
+                    <!-- Area 4 -->
+                    <div class="col-auto animate-on-scroll" style="transition-delay: 0.3s">
+                        <div
+                            class="interest-card bg-dark-card border border-light border-opacity-10 px-4 py-3 rounded-4 d-flex align-items-center transition-all hover-translate-y">
+                            <i class="bi bi-cpu fs-4 text-accent me-3"></i>
+                            <span class="text-white fw-medium">Inteligencia Artificial</span>
+                        </div>
+                    </div>
+                    <!-- Area 5 -->
+                    <div class="col-auto animate-on-scroll" style="transition-delay: 0.4s">
+                        <div
+                            class="interest-card bg-dark-card border border-light border-opacity-10 px-4 py-3 rounded-4 d-flex align-items-center transition-all hover-translate-y">
+                            <i class="bi bi-shield-lock fs-4 text-accent me-3"></i>
+                            <span class="text-white fw-medium">Ciberseguridad</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-6 position-relative">
+        <div class="container py-5">
+            <div class="text-center mb-5 animate-on-scroll">
+                <h6 class="text-accent text-uppercase fw-bold tracking-widest mb-2">● Hablemos ●</h6>
+                <h2 class="display-5 fw-bold text-white">Ponte en <span class="text-gradient">Contacto</span></h2>
+                <div class="section-divider mx-auto my-4"></div>
+                <p class="text-gray mx-auto" style="max-width: 600px;">¿Tienes un proyecto en mente o una oportunidad de
+                    trabajo? Estaré encantado de conversar contigo.</p>
+            </div>
+
+            <div class="row g-5 justify-content-center align-items-stretch">
+                <!-- Info de contacto -->
+                <div class="col-lg-auto animate-on-scroll">
+                    <div
+                        class="contact-info bg-dark-card p-5 rounded-4 h-100 shadow-lg border border-light border-opacity-10 mx-auto">
+                        <h4 class="text-white fw-bold mb-5 fs-3">Información</h4>
+
+                        <div class="contact-item d-flex align-items-start mb-4">
+                            <div class="contact-icon-box bg-accent-subtle text-accent rounded-circle d-flex align-items-center justify-content-center me-4 shadow-sm flex-shrink-0"
+                                style="width: 55px; height: 55px;">
+                                <i class="bi bi-envelope-fill fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="text-gray mb-1 text-uppercase tracking-widest text-xs fw-bold">Email</h6>
+                                <a href="mailto:alejobeos05@gmail.com"
+                                    class="text-white text-decoration-none fw-medium fs-6 contact-link">alejobeos05@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item d-flex align-items-start mb-5">
+                            <div class="contact-icon-box bg-accent-subtle text-accent rounded-circle d-flex align-items-center justify-content-center me-4 shadow-sm flex-shrink-0"
+                                style="width: 55px; height: 55px;">
+                                <i class="bi bi-geo-alt-fill fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="text-gray mb-1 text-uppercase tracking-widest text-xs fw-bold">Ubicación</h6>
+                                <span class="text-white fw-medium fs-6">Envigado, Antioquia, Colombia</span>
+                            </div>
+                        </div>
+
+                        <hr class="border-light opacity-10 my-4">
+
+                        <h6 class="text-gray mb-3 text-uppercase tracking-widest text-xs fw-bold">Sígueme en</h6>
+                        <div class="d-flex gap-3 social-links">
+                            <a href="https://github.com/ABerrioO" target="_blank" class="social-btn shadow-sm"
+                                aria-label="GitHub">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <!-- <a href="https://linkedin.com/" target="_blank" class="social-btn shadow-sm"
+                                aria-label="LinkedIn">
+                                <i class="bi bi-linkedin"></i>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario / Únicamente visual, todavía no funcional-->
+                <!-- <div class="col-lg-8 animate-on-scroll" style="transition-delay: 0.1s">
+                    <form
+                        class="contact-form bg-dark-card p-5 rounded-4 shadow-lg border border-light border-opacity-10 h-100"
+                        id="contactForm">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label text-white fw-medium">Nombre completo</label>
+                                <div class="input-group">
+                                    <span
+                                        class="input-group-text bg-dark border-end-0 border-light border-opacity-10 text-gray"><i
+                                            class="bi bi-person"></i></span>
+                                    <input type="text" class="form-control border-start-0" id="name"
+                                        placeholder="Ej. Juan Pérez" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label text-white fw-medium">Correo electrónico</label>
+                                <div class="input-group">
+                                    <span
+                                        class="input-group-text bg-dark border-end-0 border-light border-opacity-10 text-gray"><i
+                                            class="bi bi-envelope"></i></span>
+                                    <input type="email" class="form-control border-start-0" id="email"
+                                        placeholder="tu@correo.com" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="subject" class="form-label text-white fw-medium">Asunto</label>
+                                <div class="input-group">
+                                    <span
+                                        class="input-group-text bg-dark border-end-0 border-light border-opacity-10 text-gray"><i
+                                            class="bi bi-chat-left-text"></i></span>
+                                    <input type="text" class="form-control border-start-0" id="subject"
+                                        placeholder="Propuesta de proyecto, oferta laboral..." required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label text-white fw-medium">Mensaje</label>
+                                <textarea class="form-control p-3" id="message" rows="5"
+                                    placeholder="Escribe tu mensaje aquí..." required></textarea>
+                            </div>
+                            <div class="col-12 mt-4 text-end">
+                                <button type="submit"
+                                    class="btn btn-accent btn-lg px-5 py-3 rounded-pill fw-bold text-uppercase tracking-wide shadow-accent group">
+                                    <span>Enviar Mensaje</span>
+                                    <i class="bi bi-send-fill ms-2 send-icon"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-darker border-top border-light border-opacity-10">
+        <div class="container">
+            <div class="row g-4 align-items-start mb-4">
+                <!-- Brand -->
+                <div class="col-lg-4 text-start">
+                    <a class="navbar-brand fw-bold text-accent" href="#hero" style="font-size: 1.2rem;">Alejandro Berrio
+                        Ospina</a>
+                    <p class="text-white opacity-75 small mt-2 mb-0">Desarrollador de Software en formación</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-3 text-start">
+                    <h6 class="text-white fw-bold mb-3 tracking-widest" style="font-size: 1rem;">Navegación</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                        <li><a href="#hero"
+                                class="text-gray text-decoration-none hover-accent transition-all small">Inicio</a></li>
+                        <li><a href="#habilidades"
+                                class="text-gray text-decoration-none hover-accent transition-all small">Habilidades</a>
+                        </li>
+                        <li><a href="#proyectos"
+                                class="text-gray text-decoration-none hover-accent transition-all small">Proyectos</a>
+                        </li>
+                        <li><a href="#estudios"
+                                class="text-gray text-decoration-none hover-accent transition-all small">Estudios</a>
+                        </li>
+                        <li><a href="#contacto"
+                                class="text-gray text-decoration-none hover-accent transition-all small">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Links -->
+                <div class="col-lg-3 text-start">
+                    <h6 class="text-white fw-bold mb-3 tracking-widest" style="font-size: 1rem;">Sígueme</h6>
+                    <div class="d-flex gap-3 justify-content-start">
+                        <a href="https://github.com/ABerrioO" target="_blank" class="social-btn"
+                            style="width: 40px; height: 40px; font-size: 1.1rem;" aria-label="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-top pt-4 text-start" style="border-color: rgba(255,255,255,0.2) !important;">
+                <p class="text-gray mb-0 small opacity-75">
+                    &copy; <span id="currentYear"></span> Alejandro Berrio Ospina. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
