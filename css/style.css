@@ -344,11 +344,12 @@ body {
     }
 }
 
+/* Ajuste de la foto de perfil */
 .hero-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transform: scale(1.9) translateY(70px) translateX(5px);
+    transform: scale(1.28) translateY(37px) translateX(5px);
     transition: transform 0.4s ease;
 }
 
