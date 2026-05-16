@@ -663,6 +663,10 @@ button[type="submit"]:hover .send-icon {
         height: 280px;
     }
 
+    .hero-img {
+        transform: scale(1.28) translateY(25px) translateX(5px);
+    }
+
     .navbar-collapse {
         background-color: rgba(15, 20, 30, 0.98);
         padding: 1rem;
